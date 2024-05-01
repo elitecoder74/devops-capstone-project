@@ -198,7 +198,6 @@ class TestAccountService(TestCase):
     #  S E C U R I T Y   H E A D E R S   T E S T   C A S E S
     ######################################################################
 
-
     def test_security_headers(self):
         """It should return security headers"""
         response = self.client.get('/', environ_overrides=HTTPS_ENVIRON)
